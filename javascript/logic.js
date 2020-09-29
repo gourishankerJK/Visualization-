@@ -48,14 +48,15 @@ async function bubblesort() {
 	}
 	rectangles[n - 1].style.backgroundColor = "green"
 }
+
 async function selection_sorting() {
+	var j = 0;
 	var n = document.querySelector("#Gouri1").childElementCount
-	console.log(n)
 	var rectangles = document.querySelectorAll("#Gouri1 .heights")
 	console.log(rectangles)
 	var min = i
 	for (i = 0; i < n - 1; i++) {
-		for (var j = i+1; j < n; j++) {
+		for (j = i+1; j < n; j++) {
 			let first = Number(rectangles[j].style.height.split("p")[0])
 			let second = Number(rectangles[min].style.height.split("p")[0])
 			rectangles[j].style.backgroundColor = "white"
@@ -66,7 +67,8 @@ async function selection_sorting() {
 			}
 			 rectangles[j].style.backgroundColor = "lightgreen"
 		}
-    if (min !=i){
+    if (min != i)
+		{
 			rectangles[i].style.backgroundColor = "brown"
 			rectangles[min].style.backgroundColor = "brown"
 			await sleep(250)
