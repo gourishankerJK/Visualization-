@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	background: rgba(12,11,25,1);
+}
+#selection_sort{
+	display: flex;
+	text-align: center;
+	color : orange;
+	align-items:center;
+	justify-content: center;
+}
+#selection_sort ul {
+	display: flex;
+	align-items: flex-end;
+	width: 500px;
+	height : 500px;
+	margin: 80px auto;
+	background-color: red;
+}
+#selection_sort ul li{
+	width : 10px;
+	color :black;
+	margin: 10px ;
+	background-color: lightgreen ;
+}
+#height0{
+	height: 185px;
+}
+#lol{
+	height: 50px;
+	width :50px;
+	border-style: outset;
+	border-radius: 50%;
+	border-color: orange;
+	margin: 150px auto;
+}
