@@ -5,11 +5,12 @@
 	text-decoration: none;
 	list-style: none;
 }
-body{
+#main{
 	background: rgba(12,11,25,1);
 	display: flex;
-	justify-content: center;
-	align-items: center;
+  flex-wrap: wrap;
+	flex-direction: row ;
+	justify-content: space-around;
 }
 .sort{
 	color : orange;
@@ -17,8 +18,8 @@ body{
 .sort ul {
 	display: flex;
 	align-items: flex-end;
-	width: 500px;
-	height : 500px;
+	width: 250px;
+	height : 250px;
 	margin: 0px auto;
 	background-color: red;
 }
@@ -28,18 +29,10 @@ body{
 	margin: 5px ;
 	background-color: lightgreen ;
 }
-#height0{
-	height: 185px;
-}
-#lol,#lol1{
+#lol,#lol1,#lol2{
 	height: 50px;
-	width :50px;
+	width :100px;
 	border-style: outset;
-	border-radius: 50%;
 	border-color: orange;
-	margin: 150px auto;
-	transform: scale(2);
-}
-.sort{
-	transform: scale(0.5);
+	margin: 10px 150px;
 }
