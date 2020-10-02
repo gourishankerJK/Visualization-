@@ -60,8 +60,9 @@ async function selection_sorting() {
 	var n = document.querySelector("#Gouri1").childElementCount
 	var rectangles = document.querySelectorAll("#Gouri1 .heights")
 	console.log(rectangles)
-	var min = i
+
 	for (i = 0; i < n - 1; i++) {
+		var min = i
 		for (j = i+1; j < n; j++) {
 			let first = Number(rectangles[j].style.height.split("p")[0])
 			let second = Number(rectangles[min].style.height.split("p")[0])
@@ -109,19 +110,12 @@ async function insertion_sorting() {
 					k-=1
 				}
 			}
-
 		}
 		for (i = 0 ;i<n ;i++){
 				rectangles[i].style.backgroundColor = "green"
 
-		}
+		 }
 }
-
-
-
-
-
-
 document.querySelector("#lol").addEventListener("click", bubblesort);
 document.querySelector("#lol1").addEventListener("click", selection_sorting);
 document.querySelector("#lol2").addEventListener("click", insertion_sorting);
